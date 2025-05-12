@@ -4,7 +4,7 @@
 #include "stm32f10x_tim.h"
 #include "oled.h"  // 添加OLED库
 
-#define FILTER_COEFFICIENT 0.1  // 滤波器系数，可以根据需要调整
+#define FILTER_COEFFICIENT 0.1  // 滤波 器系数，可以根据需要调整
 #define WAVE_DATA_LENGTH 128    // 波形数据长度
 
 uint16_t filteredWaveData[WAVE_DATA_LENGTH];  // 存储滤波后的波形数据
