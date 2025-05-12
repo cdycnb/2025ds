@@ -1,0 +1,13 @@
+mocking:
+  - User/delay.h
+include:
+  - unity_config.h
+  - mocks/mock_delay.h
+  - test_main.c
+  - test_delay.c
+  - CMockConfig.yml
+output:
+  directory: mocks
+  file: mock_delay.h
+  include: User/delay.h
+  prefix: mock_
